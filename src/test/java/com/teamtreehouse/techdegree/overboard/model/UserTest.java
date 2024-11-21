@@ -54,6 +54,17 @@ public class UserTest {
         
     }
 
+    @Test
+    public void increasingResponderReputationWhenAnswerIsAccepted() throws Exception{
+
+        initialReputation = userNum2.getReputation();
+        userNum1.acceptAnswer(answer);
+        actualReputation = userNum2.getReputation();
+
+        assertEquals(15, actualReputation-initialReputation);
+
+    }
+
 
 }
 
