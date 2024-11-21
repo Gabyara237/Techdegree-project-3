@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.teamtreehouse.techdegree.overboard.model.UserTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-11-21T21:53:49" hostname="macos-JGJ2GD9G4W" time="0.006">
+<testsuite name="com.teamtreehouse.techdegree.overboard.model.UserTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2024-11-21T22:19:52" hostname="macos-JGJ2GD9G4W" time="0.008">
   <properties/>
   <testcase name="tryingToGetTheUserToVoteInFavorOfYourOwnQuestion" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.003"/>
   <testcase name="increasingResponderReputationWhenAnswerIsAccepted" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.002"/>
   <testcase name="tryingToHaveTheUserToDownVoteTheirOwnQuestion" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>
+  <testcase name="tryingToHaveANonAuthorUserAcceptAnAnswerToTheQuestion" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.002"/>
   <testcase name="increasingQuestionerReputation" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>
   <testcase name="increasingResponderReputation" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>
   <testcase name="tryingToHaveTheUserDownVoteTheirOwnAnswer" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>

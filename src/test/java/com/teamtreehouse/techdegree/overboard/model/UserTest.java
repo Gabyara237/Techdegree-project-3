@@ -1,6 +1,7 @@
 package com.teamtreehouse.techdegree.overboard.model;
 
 import com.teamtreehouse.techdegree.overboard.exc.VotingException;
+import com.teamtreehouse.techdegree.overboard.exc.AnswerAcceptanceException;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -24,6 +25,7 @@ public class UserTest {
 
     @Rule
     public ExpectedException thrown = ExpectedException.none();
+
 
     @Before
     public void setUp() throws Exception {
@@ -100,5 +102,14 @@ public class UserTest {
         thrown.expectMessage("You cannot vote for yourself!");
         userNum2.downVote(answer);
     }
+
+    @Test
+    public void tryingToHaveANonAuthorUserAcceptAnAnswerToTheQuestion() {
+        thrown.expect(AnswerAcceptanceException.class);
+        thrown.expectMessage("Only "+ ((answer.getQuestion()).getAuthor()).getName()+ " can accept this answer as it is their question");
+        userNum3.acceptAnswer(answer);
+    }
+
+
 }
 
