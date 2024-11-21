@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.teamtreehouse.techdegree.overboard.model.UserTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2024-11-21T22:39:14" hostname="macos-JGJ2GD9G4W" time="0.009">
+<testsuite name="com.teamtreehouse.techdegree.overboard.model.UserTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2024-11-21T23:01:20" hostname="macos-JGJ2GD9G4W" time="0.008">
   <properties/>
-  <testcase name="tryingToGetTheUserToVoteInFavorOfYourOwnQuestion" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.003"/>
-  <testcase name="increasingResponderReputationWhenAnswerIsAccepted" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.002"/>
+  <testcase name="downVotingOfQuestionsAffectsNothing" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.002"/>
+  <testcase name="tryingToGetTheUserToVoteInFavorOfYourOwnQuestion" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.002"/>
+  <testcase name="increasingResponderReputationWhenAnswerIsAccepted" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>
   <testcase name="tryingToHaveTheUserToDownVoteTheirOwnQuestion" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>
-  <testcase name="tryingToHaveANonAuthorUserAcceptAnAnswerToTheQuestion" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.003"/>
+  <testcase name="tryingToHaveANonAuthorUserAcceptAnAnswerToTheQuestion" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.001"/>
   <testcase name="increasingQuestionerReputation" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>
   <testcase name="makingTheAuthorOfTheQuestionAcceptAnAnswer" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>
   <testcase name="increasingResponderReputation" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>

@@ -119,5 +119,16 @@ public class UserTest {
         userNum1.acceptAnswer(answer);
         assertTrue(answer.isAccepted());
     }
+
+
+    @Test
+    public void votingNegativelyOnAQuestionDoesNotAffectReputation() {
+        initialReputation = userNum1.getReputation();
+        userNum2.downVote(question);
+        actualReputation = userNum1.getReputation();
+
+        assertEquals(initialReputation,actualReputation);
+
+    }
 }
 
