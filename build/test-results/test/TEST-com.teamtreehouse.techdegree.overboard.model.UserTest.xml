@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.teamtreehouse.techdegree.overboard.model.UserTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2024-11-21T23:01:20" hostname="macos-JGJ2GD9G4W" time="0.008">
+<testsuite name="com.teamtreehouse.techdegree.overboard.model.UserTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2024-11-21T23:20:57" hostname="macos-JGJ2GD9G4W" time="0.008">
   <properties/>
-  <testcase name="downVotingOfQuestionsAffectsNothing" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.002"/>
   <testcase name="tryingToGetTheUserToVoteInFavorOfYourOwnQuestion" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.002"/>
-  <testcase name="increasingResponderReputationWhenAnswerIsAccepted" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>
+  <testcase name="increasingResponderReputationWhenAnswerIsAccepted" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.002"/>
   <testcase name="tryingToHaveTheUserToDownVoteTheirOwnQuestion" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>
-  <testcase name="tryingToHaveANonAuthorUserAcceptAnAnswerToTheQuestion" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.001"/>
+  <testcase name="tryingToHaveANonAuthorUserAcceptAnAnswerToTheQuestion" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.002"/>
   <testcase name="increasingQuestionerReputation" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>
   <testcase name="makingTheAuthorOfTheQuestionAcceptAnAnswer" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>
-  <testcase name="increasingResponderReputation" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>
+  <testcase name="increasingResponderReputation" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.001"/>
+  <testcase name="votingNegativelyOnAQuestionDoesNotAffectReputation" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>
   <testcase name="tryingToHaveTheUserDownVoteTheirOwnAnswer" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>
+  <testcase name="votingNegativelyOnAnAnswerReducesTheReputationOfTheAnswerer" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>
   <testcase name="tryingToHaveTheUserUpvoteTheirOwnAnswer" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

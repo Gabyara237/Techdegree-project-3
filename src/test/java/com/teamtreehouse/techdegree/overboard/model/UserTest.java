@@ -130,5 +130,15 @@ public class UserTest {
         assertEquals(initialReputation,actualReputation);
 
     }
+
+    @Test
+    public void votingNegativelyOnAnAnswerReducesTheReputationOfTheAnswerer () {
+        initialReputation = userNum3.getReputation();
+        userNum2.downVote(answer2);
+        actualReputation = userNum3.getReputation();
+
+        assertEquals(1,initialReputation-actualReputation);
+
+    }
 }
 
