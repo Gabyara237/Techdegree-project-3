@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.teamtreehouse.techdegree.overboard.model.UserTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-11-21T21:07:46" hostname="macos-JGJ2GD9G4W" time="0.004">
+<testsuite name="com.teamtreehouse.techdegree.overboard.model.UserTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-11-21T21:21:50" hostname="macos-JGJ2GD9G4W" time="0.006">
   <properties/>
-  <testcase name="increasingResponderReputationWhenAnswerIsAccepted" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.003"/>
+  <testcase name="tryingToGetTheUserToVoteInFavorOfYourOwnQuestion" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.003"/>
+  <testcase name="increasingResponderReputationWhenAnswerIsAccepted" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.001"/>
   <testcase name="increasingQuestionerReputation" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>
   <testcase name="increasingResponderReputation" classname="com.teamtreehouse.techdegree.overboard.model.UserTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
