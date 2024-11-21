@@ -79,5 +79,19 @@ public class UserTest {
         userNum1.upVote(question);
 
     }
+
+    @Test
+    public void tryingToHaveTheUserToDownVoteTheirOwnQuestion() {
+        thrown.expect(VotingException.class);
+        thrown.expectMessage("You cannot vote for yourself!");
+        userNum1.downVote(question);
+    }
+
+    @Test
+    public void tryingToHaveTheUserUpvoteTheirOwnAnswer() {
+        thrown.expect(VotingException.class);
+        thrown.expectMessage("You cannot vote for yourself!");
+        userNum2.upVote(answer);
+    }
 }
 
