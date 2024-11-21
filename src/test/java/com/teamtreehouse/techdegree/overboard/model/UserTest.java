@@ -93,5 +93,12 @@ public class UserTest {
         thrown.expectMessage("You cannot vote for yourself!");
         userNum2.upVote(answer);
     }
+
+    @Test
+    public void tryingToHaveTheUserDownVoteTheirOwnAnswer() {
+        thrown.expect(VotingException.class);
+        thrown.expectMessage("You cannot vote for yourself!");
+        userNum2.downVote(answer);
+    }
 }
 
