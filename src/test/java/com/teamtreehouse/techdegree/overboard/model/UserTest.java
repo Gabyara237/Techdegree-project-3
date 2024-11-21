@@ -108,8 +108,14 @@ public class UserTest {
         thrown.expect(AnswerAcceptanceException.class);
         thrown.expectMessage("Only "+ ((answer.getQuestion()).getAuthor()).getName()+ " can accept this answer as it is their question");
         userNum3.acceptAnswer(answer);
+
     }
 
-
+    @Test
+    public void makingTheAuthorOfTheQuestionAcceptAnAnswer() {
+        userNum1.acceptAnswer(answer);
+        userNum1.acceptAnswer(answer);
+        assertTrue(answer.isAccepted());
+    }
 }
 
