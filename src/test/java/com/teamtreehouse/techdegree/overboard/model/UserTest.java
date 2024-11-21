@@ -35,10 +35,12 @@ public class UserTest {
         userNum1= board.createUser("Gabriel");
         userNum2 = board.createUser("Gabriela");
         userNum3 = board.createUser("Andres");
+
         question = userNum1.askQuestion("What are the advantages of using composition Model in java unit test?");
+        question2 = userNum2.askQuestion("What is TDD in Java unit testing?");
 
         answer= userNum2.answerQuestion(question,"When using the composition modal of code re-use, you are in more control of what public methods you expose, as well as the naming of the methods to your specific use case.");
-
+        answer2 = userNum3.answerQuestion(question2,"Is a development practice where you write tests before the code");
     }
 
     @Test
