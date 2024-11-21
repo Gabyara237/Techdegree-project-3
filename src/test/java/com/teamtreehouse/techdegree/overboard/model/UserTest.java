@@ -1,22 +1,41 @@
 package com.teamtreehouse.techdegree.overboard.model;
 
 import org.junit.Before;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 public class UserTest {
     private Answer answer;
     private Board board;
-    private User userWhoAnswers;
+    private User userNum2;
     private Question question;
-    private User userWhoAsks;
+    private User userNum1;
+    private User userWhoAsks2;
+    private Question question2;
+    private User userWhoAnswers2;
+    private Answer answer2;
 
     @Before
     public void setUp() throws Exception {
 
-        answer = new Answer(question,userWhoAnswers,"When using the composition model of code re-use, you are in more control of what public methods you expose, as well as the naming of the methods to your specific use case");
         board = new Board("Java - Unit Test");
-        userWhoAnswers = new User(board,"Gabriela");
-        userWhoAsks = new User(board,"Gabriel");
-        question = new Question(userWhoAsks,"What are the advantages of using composition Model in java unit test?");
+
+        userNum1= board.createUser("Gabriel");
+        userNum2 = board.createUser("Gabriela");
+
+        question = userNum1.askQuestion("What are the advantages of using composition Model in java unit test?");
+
+
+    }
+
+    @Test
+    public void increasingQuestionerReputation()throws Exception {
+
+        int initialReputation = userNum1.getReputation();
+        userNum2.upVote(question);
+        int actualReputation = userNum1.getReputation();
+        assertEquals(5,actualReputation-initialReputation);
+
     }
 }
+
